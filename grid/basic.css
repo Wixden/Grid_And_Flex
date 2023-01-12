@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  background-image: url("bg.png");
+  background-image: url("./images/bg.png");
   position: relative;
   display: grid;
   place-content: center;
