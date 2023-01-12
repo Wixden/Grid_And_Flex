@@ -1,0 +1,33 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  padding: 20px;
+  border: 2px solid #00ffe1;
+  gap: 30px;
+  /* YOu can use column size and use it for the number of colum you need. example: 200px 200px 200px 200px 200px. here you will get 5 column with same size example 2: 200px 430px 300px 500px here you get 4 column with 4 different sizes. we use repeat for the same sized column */
+}
+
+.grid_item {
+  background-image: linear-gradient(
+    160deg,
+    rgba(0, 148, 233, 0.762) 0%,
+    rgba(128, 208, 199, 0.1) 100%
+  );
+  border-radius: 8px;
+  height: 70px;
+  /* width: 70px; */
+}
+
+/* TO expand a grid item we will use "grid-column: 1 / 3" Here it will expand it's territory from 1 to 3 lines. (column line start from 1 to -1/ and row line start from 1 to -1) if you want to expand an item to the entire row use (1/-1))  For expanding row it is also same. Just use "grid-row" instead of "grid-column" */
+.expand_one {
+  grid-column: 1 / 3;
+}
+
+.expand_two {
+  grid-column: 2 / 4;
+}
